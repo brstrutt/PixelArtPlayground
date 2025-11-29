@@ -34,10 +34,10 @@ main {
 /* Add example CSS pixel art copied from https://css-tricks.com/fun-times-css-pixel-art/ */
 .test_css_pixel_art_1 {
   background: #000;
-  width: 10px;
-  height: 10px;
+  width: 2px;
+  height: 2px;
 
   box-shadow:
-    10px 10px  red,
-    -10px 10px orange;
+    2px 2px  red,
+    -2px 2px orange;
 }
