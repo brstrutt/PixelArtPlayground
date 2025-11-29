@@ -51,4 +51,5 @@ main {
 
 .the_army {
     display: flex;
+    flex-wrap: wrap;
 }
