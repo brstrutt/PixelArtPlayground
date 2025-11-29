@@ -1,3 +1,17 @@
+@font-face {
+  font-family: DefaultPixelFont;
+  src: url(./assets/fonts/Able_5.ttf); /* Able 5 font by Stormgold. Download from itch.io at https://stormgold.itch.io/able-font */
+}
+
+@font-face {
+  font-family: TinyPixelFont;
+  src: url(./assets/fonts/TwoSlice.woff); /* TwoSlice font by Stormgold. Download from itch.io at https://stormgold.itch.io/two-slice */
+}
+
+* {
+    font-family: DefaultPixelFont;
+}
+
 body {
     padding: 0;
     margin: 0;
