@@ -48,3 +48,7 @@ main {
         2px 2px red,
         4px 0px orange;
 }
+
+.the_army {
+    display: flex;
+}
