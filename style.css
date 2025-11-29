@@ -42,13 +42,15 @@ main {
     4px 0px orange;
 }
 
-.bellsprout_container {
+.bellsprout {
+  position: relative;
   width: 32px;
   height: 32px;
 }
 
-.bellsprout {
-  position:relative;
+.bellsprout:after {
+  position:absolute;
+  content: "";
   /* Size of a single pixel. Box-shadow matches these dimensions for each shadow */
   width: 2px;
   height: 2px;
