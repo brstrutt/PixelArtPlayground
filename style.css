@@ -1,6 +1,11 @@
+/* Reset default browser styles. I probably need complete control if I'm going to make this work. */
+@import url(./custom_css_reset.css);
+
+/* Add some custom pixel art fonts */
 @font-face {
   font-family: DefaultPixelFont;
   src: url(./assets/fonts/Able_5.ttf); /* Able 5 font by Stormgold. Download from itch.io at https://stormgold.itch.io/able-font */
+  /* Characters are 9 pixels tall, NOT 5 */
 }
 
 @font-face {
@@ -10,9 +15,5 @@
 
 * {
     font-family: DefaultPixelFont;
-}
-
-body {
-    padding: 0;
-    margin: 0;
+    font-size: 18px; /* MUST be a multiple of 9 pixels. This is the height of a character in the DefaultPixelFont */
 }
