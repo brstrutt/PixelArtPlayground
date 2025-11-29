@@ -2,6 +2,7 @@
 @import url(./custom_css_reset.css);
 
 @import url(./bellsprout.css);
+@import url(./spoink.css);
 
 /* Add some custom pixel art fonts */
 @font-face {
