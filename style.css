@@ -17,3 +17,16 @@
     font-family: DefaultPixelFont;
     font-size: 18px; /* MUST be a multiple of 9 pixels. This is the height of a character in the DefaultPixelFont */
 }
+
+h1 {
+    font-size: 36px; /* MUST be a multiple of 9 pixels. This is the height of a character in the DefaultPixelFont */
+}
+
+main {
+    background-color: #a9a9a9;
+    --viewWidthRemainderTwo: mod(100vw, 2px);
+    width: calc(var((100vw - var(--viewWidthRemainderTwo))) / 2px);
+    --viewWidthRemainderFour: mod(100vw, 4px);
+    margin: 20px calc((100vw - var(--viewWidthRemainderFour)) / 4);
+    padding: 18px;
+}
