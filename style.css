@@ -3,23 +3,27 @@
 
 /* Add some custom pixel art fonts */
 @font-face {
-  font-family: DefaultPixelFont;
-  src: url(./assets/fonts/Able_5.ttf); /* Able 5 font by Stormgold. Download from itch.io at https://stormgold.itch.io/able-font */
-  /* Characters are 9 pixels tall, NOT 5 */
+    font-family: DefaultPixelFont;
+    src: url(./assets/fonts/Able_5.ttf);
+    /* Able 5 font by Stormgold. Download from itch.io at https://stormgold.itch.io/able-font */
+    /* Characters are 9 pixels tall, NOT 5 */
 }
 
 @font-face {
-  font-family: TinyPixelFont;
-  src: url(./assets/fonts/TwoSlice.woff); /* TwoSlice font by Stormgold. Download from itch.io at https://stormgold.itch.io/two-slice */
+    font-family: TinyPixelFont;
+    src: url(./assets/fonts/TwoSlice.woff);
+    /* TwoSlice font by Stormgold. Download from itch.io at https://stormgold.itch.io/two-slice */
 }
 
 * {
     font-family: DefaultPixelFont;
-    font-size: 18px; /* MUST be a multiple of 9 pixels. This is the height of a character in the DefaultPixelFont */
+    font-size: 18px;
+    /* MUST be a multiple of 9 pixels. This is the height of a character in the DefaultPixelFont */
 }
 
 h1 {
-    font-size: 36px; /* MUST be a multiple of 9 pixels. This is the height of a character in the DefaultPixelFont */
+    font-size: 36px;
+    /* MUST be a multiple of 9 pixels. This is the height of a character in the DefaultPixelFont */
 }
 
 main {
@@ -33,102 +37,102 @@ main {
 
 /* Add example CSS pixel art copied from https://css-tricks.com/fun-times-css-pixel-art/ */
 .test_css_pixel_art_1 {
-  background: #000;
-  width: 2px;
-  height: 2px;
+    background: #000;
+    width: 2px;
+    height: 2px;
 
-  box-shadow:
-    2px 2px  red,
-    4px 0px orange;
+    box-shadow:
+        2px 2px red,
+        4px 0px orange;
 }
 
 .bellsprout {
-  position: relative;
-  width: 32px;
-  height: 32px;
+    position: relative;
+    width: 32px;
+    height: 32px;
 }
 
 .bellsprout:after {
-  position:absolute;
-  content: "";
-  /* Size of a single pixel. Box-shadow matches these dimensions for each shadow */
-  width: 2px;
-  height: 2px;
+    position: absolute;
+    content: "";
+    /* Size of a single pixel. Box-shadow matches these dimensions for each shadow */
+    width: 2px;
+    height: 2px;
 
-  /* Setup a colour palette to make life easier */
-  --black: #000000;
-  --yellow: #fbf236;
-  --darkYellow: #85974a;
-  --lightBrown: #8f563b;
-  --brown: #7a4736;
-  --darkBrown: #663931;
-  --lightGreen: #99e550;
-  --green: #6abe30;
-  --darkGreen: #4b692f;
-  --red: #d95763;
-  --darkRed: #45283c;
-  --shadow: #00000066;
+    /* Setup a colour palette to make life easier */
+    --black: #000000;
+    --yellow: #fbf236;
+    --darkYellow: #85974a;
+    --lightBrown: #8f563b;
+    --brown: #7a4736;
+    --darkBrown: #663931;
+    --lightGreen: #99e550;
+    --green: #6abe30;
+    --darkGreen: #4b692f;
+    --red: #d95763;
+    --darkRed: #45283c;
+    --shadow: #00000066;
 
-  /* Set the initial pixel all other pixels are relative to */
-  background: var(--yellow);
-  top: 2px;
-  left: 16px;
+    /* Set the initial pixel all other pixels are relative to */
+    background: var(--yellow);
+    top: 2px;
+    left: 16px;
 
-  box-shadow:
-    2px 0px 0  var(--yellow),
-    4px 0px 0  var(--yellow),
-    -2px 2px 0 var(--darkYellow),
-    0px 2px 0 var(--yellow),
-    2px 2px 0 var(--yellow),
-    4px 2px 0 var(--yellow),
-    6px 2px 0 var(--black),
-    -4px 4px 0 var(--lightBrown),
-    0px 4px 0 var(--darkYellow),
-    2px 4px 0 var(--black),
-    4px 4px 0 var(--yellow),
-    6px 4px 0 var(--yellow),
-    -4px 6px 0 var(--brown),
-    2px 6px 0 var(--darkYellow),
-    4px 6px 0 var(--yellow),
-    6px 6px 0 var(--red),
-    8px 6px 0 var(--red),
-    -10px 8px 0 var(--lightGreen),
-    -8px 8px 0 var(--green),
-    -4px 8px 0 var(--darkBrown),
-    4px 8px 0 var(--red),
-    6px 8px 0 var(--darkRed),
-    -12px 10px 0 var(--lightGreen),
-    -10px 10px 0 var(--green),
-    -8px 10px 0 var(--darkGreen),
-    -6px 10px 0 var(--darkGreen),
-    -2px 10px 0 var(--lightBrown),
-    0px 10px 0 var(--green),
-    2px 10px 0 var(--darkGreen),
-    4px 10px 0 var(--lightGreen),
-    6px 10px 0 var(--lightGreen),
-    -14px 12px 0 var(--green),
-    -12px 12px 0 var(--darkGreen),
-    -10px 12px 0 var(--darkGreen),
-    -8px 12px 0 var(--darkGreen),
-    -2px 12px 0 var(--darkBrown),
-    2px 12px 0 var(--darkGreen),
-    4px 12px 0 var(--darkGreen),
-    6px 12px 0 var(--lightGreen),
-    8px 12px 0 var(--green),
-    0px 14px 0 var(--lightBrown),
-    4px 14px 0 var(--darkGreen),
-    6px 14px 0 var(--green),
-    0px 16px 0 var(--brown),
-    4px 16px 0 var(--darkBrown),
-    6px 16px 0 var(--brown),
-    -6px 18px 0 var(--brown),
-    0px 18px 0 var(--lightBrown),
-    2px 18px 0 var(--darkBrown),
-    8px 18px 0 var(--darkBrown),
-    -4px 20px 0 var(--brown),
-    -2px 20px 0 var(--lightBrown),
-    -4px 26px 0 var(--shadow),
-    0px 26px 0 var(--shadow),
-    2px 26px 0 var(--shadow),
-    6px 26px 0 var(--shadow)
+    box-shadow:
+        2px 0px 0 var(--yellow),
+        4px 0px 0 var(--yellow),
+        -2px 2px 0 var(--darkYellow),
+        0px 2px 0 var(--yellow),
+        2px 2px 0 var(--yellow),
+        4px 2px 0 var(--yellow),
+        6px 2px 0 var(--black),
+        -4px 4px 0 var(--lightBrown),
+        0px 4px 0 var(--darkYellow),
+        2px 4px 0 var(--black),
+        4px 4px 0 var(--yellow),
+        6px 4px 0 var(--yellow),
+        -4px 6px 0 var(--brown),
+        2px 6px 0 var(--darkYellow),
+        4px 6px 0 var(--yellow),
+        6px 6px 0 var(--red),
+        8px 6px 0 var(--red),
+        -10px 8px 0 var(--lightGreen),
+        -8px 8px 0 var(--green),
+        -4px 8px 0 var(--darkBrown),
+        4px 8px 0 var(--red),
+        6px 8px 0 var(--darkRed),
+        -12px 10px 0 var(--lightGreen),
+        -10px 10px 0 var(--green),
+        -8px 10px 0 var(--darkGreen),
+        -6px 10px 0 var(--darkGreen),
+        -2px 10px 0 var(--lightBrown),
+        0px 10px 0 var(--green),
+        2px 10px 0 var(--darkGreen),
+        4px 10px 0 var(--lightGreen),
+        6px 10px 0 var(--lightGreen),
+        -14px 12px 0 var(--green),
+        -12px 12px 0 var(--darkGreen),
+        -10px 12px 0 var(--darkGreen),
+        -8px 12px 0 var(--darkGreen),
+        -2px 12px 0 var(--darkBrown),
+        2px 12px 0 var(--darkGreen),
+        4px 12px 0 var(--darkGreen),
+        6px 12px 0 var(--lightGreen),
+        8px 12px 0 var(--green),
+        0px 14px 0 var(--lightBrown),
+        4px 14px 0 var(--darkGreen),
+        6px 14px 0 var(--green),
+        0px 16px 0 var(--brown),
+        4px 16px 0 var(--darkBrown),
+        6px 16px 0 var(--brown),
+        -6px 18px 0 var(--brown),
+        0px 18px 0 var(--lightBrown),
+        2px 18px 0 var(--darkBrown),
+        8px 18px 0 var(--darkBrown),
+        -4px 20px 0 var(--brown),
+        -2px 20px 0 var(--lightBrown),
+        -4px 26px 0 var(--shadow),
+        0px 26px 0 var(--shadow),
+        2px 26px 0 var(--shadow),
+        6px 26px 0 var(--shadow)
 }
