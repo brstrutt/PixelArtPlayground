@@ -30,3 +30,14 @@ main {
     margin: 20px calc((100vw - var(--viewWidthRemainderFour)) / 4);
     padding: 18px;
 }
+
+/* Add example CSS pixel art copied from https://css-tricks.com/fun-times-css-pixel-art/ */
+.test_css_pixel_art_1 {
+  background: #000;
+  width: 10px;
+  height: 10px;
+
+  box-shadow:
+    10px 10px  red,
+    -10px 10px orange;
+}
