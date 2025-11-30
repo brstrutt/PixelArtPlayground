@@ -29,3 +29,17 @@ main {
     /* Stop eating pointer events. I need those to affect the underlying page! */
     pointer-events: none;
 }
+
+button {
+    width: 200px;
+    height: 32px;
+    image-rendering: pixelated;
+    background-color: #00000000;
+    background-size: 200px 32px;
+
+    background-image: url(../images/button.png);
+}
+
+button:hover {
+    background-image: url(../images/button_hovered.png);
+}
