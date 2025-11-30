@@ -6,11 +6,12 @@
     <title>Pixel Art</title>
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/16px_terminal_favicon.png">
     <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./index.js"></script>
 </head>
 
 <body>
+    <button type='button' id='toggle_pixel_grid'>Toggle pixel grid</button>
     <main>
-        <div class='pixel_grid' hidden></div>
         <div style='overflow: auto;'>
             <div style='float: left; shape-outside: inset(0);'>
                 <h1>I'm a title!</h1>
@@ -525,6 +526,7 @@
             <div class='spoink' style='float: left;'></div>
         </div>
     </main>
+    <div class='pixel_grid' hidden></div>
 </body>
 
 </html>
