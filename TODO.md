@@ -1,6 +1,7 @@
 - ~~Investigate drawing a pixel grid across the entire page, so I can verify that pixel alignment/size is being correctly maintained~~
-- Play around with non-standard div shapes. Can I get a pixelated shape that only hovers when my mouse goes over the pixel?
+- ~~Play around with non-standard div shapes. Can I get a pixelated shape that only hovers when my mouse goes over the pixel?~~
+- Can I ANIMATE the non standard div shape?
 - Can I get pixelated div motion working? Standard animation will probably look too smooth and will drag pixels into subpixels, losing crispness
-- Can I get pixel art images to display properly when at a pixel scale of 1x1? Normally the trick is to scale it up to 44 or 8x8 per pixel, but that's ass.
+- ~~Can I get pixel art images to display properly when at a pixel scale of 1x1? Normally the trick is to scale it up to 44 or 8x8 per pixel, but that's ass.~~
 - Put more pixel art everywhere!
 - Add explanations of the techiques I used to THIS website!
