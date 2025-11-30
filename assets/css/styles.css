@@ -21,7 +21,7 @@ main {
     height: 100%;
 
     background-size: 4px 4px;
-    background-image: linear-gradient(to right, blue 2px, transparent 2px), linear-gradient(to bottom, blue 2px, transparent 2px);
+    background-image: linear-gradient(to right, rgba(124, 124, 124, 0.8) 2px, transparent 2px), linear-gradient(to bottom, rgba(124, 124, 124, 0.8) 2px, transparent 2px);
 
     /* Stop eating pointer events. I need those to affect the underlying page! */
     pointer-events: none;
