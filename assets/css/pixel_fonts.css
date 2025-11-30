@@ -19,7 +19,7 @@
     font-size: 18px;
 }
 
-p {
+p, button {
     /* Add a single pixel of padding because the font for god knows what reason ends up vertically half a pixel off when at font-size 18 */
     padding-top: 1px;
     /* Add another pixel of padding to the bottom to make sure the overall div stays on the correct pixel boundaries  */
