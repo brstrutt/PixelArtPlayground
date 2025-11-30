@@ -1,0 +1,25 @@
+
+/* Add some custom pixel art fonts */
+@font-face {
+    font-family: DefaultPixelFont;
+    src: url(../fonts/Able_5.ttf);
+    /* Able 5 font by Stormgold. Download from itch.io at https://stormgold.itch.io/able-font */
+    /* Characters are 9 pixels tall, NOT 5 */
+}
+
+@font-face {
+    font-family: TinyPixelFont;
+    src: url(../fonts/TwoSlice.woff);
+    /* TwoSlice font by Stormgold. Download from itch.io at https://stormgold.itch.io/two-slice */
+}
+
+* {
+    font-family: DefaultPixelFont;
+    font-size: 18px;
+    /* MUST be a multiple of 9 pixels. This is the height of a character in the DefaultPixelFont */
+}
+
+h1 {
+    font-size: 36px;
+    /* MUST be a multiple of 9 pixels. This is the height of a character in the DefaultPixelFont */
+}

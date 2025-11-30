@@ -1,0 +1,11 @@
+
+/* Add example CSS pixel art copied from https://css-tricks.com/fun-times-css-pixel-art/ */
+.test_css_pixel_art_1 {
+    background: #000;
+    width: 2px;
+    height: 2px;
+
+    box-shadow:
+        2px 2px red,
+        4px 0px orange;
+}
