@@ -3,6 +3,9 @@
 @import url(./pixel_fonts.css);
 @import url(./pixel_art/styles.css);
 
+html {
+    position: relative;
+}
 
 main {
     background-color: #a9a9a9;
@@ -14,7 +17,7 @@ main {
 }
 
 .pixel_grid {
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
