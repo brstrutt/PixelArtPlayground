@@ -35,24 +35,25 @@ button {
     height: 32px;
     image-rendering: pixelated;
     background-color: #00000000;
-    background-size: 200px 32px;
+
+    border: 8px solid;
+    border-image-source: url(../images/button_border.png);
+    border-image-slice: 4 fill;
 }
 
 button:hover {
-    background-image: url(../images/button_hovered.png);
+    border-image-source: url(../images/button_border_hovered.png);
 }
 /* Element exists purely to pre-fetch the hovered background image to avoid flickering when first hovering over the button */
 button:before{
     content: '';
     width: 0;
     height: 0;
-    background-image: url(../images/button_hovered.png);
+    background-image: url(../images/button_border_hovered.png);
 }
 
 /* This is at the bottom because the multiline string breaks vscode's syntax highlighting for all following lines */
 button {
-    background-image: url(../images/button.png);
-
     clip-path: path("M4 0 \
     l192 0 \
     l0 2 l2 0 l0 2 l2 0 \
