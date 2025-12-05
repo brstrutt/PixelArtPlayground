@@ -58,14 +58,16 @@ button:before{
 
 /* This is at the bottom because the multiline string breaks vscode's syntax highlighting for all following lines */
 button {
-    clip-path: path("M4 0 \
-    l192 0 \
-    l0 2 l2 0 l0 2 l2 0 \
-    l0 40 \
-    l-2 0 l0 2 l-2 0 l0 2 \
-    l-192 0 \
-    l0 -2 l-2 0 l0 -2 l-2 0 \
-    l0 -40 \
-    l2 0 l0 -2 l2 0 l0 -2 \
-    Z");
+    clip-path: shape(
+        from 4px 0px,
+        line by 192px 0px,
+        line by 0px 2px, line by 2px 0px, line by 0px 2px, line by 2px 0px,
+        line by 0px 40px,
+        line by -2px 0px, line by 0px 2px, line by -2px 0px, line by 0px 2px,
+        line by -192px 0px,
+        line by 0px -2px, line by -2px 0px, line by 0px -2px, line by -2px 0px,
+        line by 0px -40px,
+        line by 2px 0px, line by 0px -2px, line by 2px 0px, line by 0px -2px,
+        close
+    );
 }
