@@ -35,8 +35,8 @@ main {
 }
 
 button {
-    --button-width: 200px;
-    --button-height: 48px;
+    --button-width: 160px;
+    --button-height: 28px;
 
     width: var(--button-width);
     height: var(--button-height);
@@ -48,15 +48,18 @@ button {
     border-image-slice: 4 fill;
 
 
+    --adjusted-button-width: calc(var(--button-width) - 8px);
+    --adjusted-button-height: calc(var(--button-height) - 8px);
+
     clip-path: shape(
         from 4px 0px,
-        line by 192px 0px,
+        line by var(--adjusted-button-width) 0px,
         line by 0px 2px, line by 2px 0px, line by 0px 2px, line by 2px 0px,
-        line by 0px 40px,
+        line by 0px var(--adjusted-button-height),
         line by -2px 0px, line by 0px 2px, line by -2px 0px, line by 0px 2px,
-        line by -192px 0px,
+        line by calc(-1 * var(--adjusted-button-width)) 0px,
         line by 0px -2px, line by -2px 0px, line by 0px -2px, line by -2px 0px,
-        line by 0px -40px,
+        line by 0px calc(-1 * var(--adjusted-button-height)),
         line by 2px 0px, line by 0px -2px, line by 2px 0px, line by 0px -2px,
         close
     );
