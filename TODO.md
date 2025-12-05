@@ -6,3 +6,4 @@
 - Can I find a pixel art font that is monospace AND has exact pixel height including whitespace AND each character is an even number of pixels wide when counting the gap between them? I need this if I ever want to center text using `text-align: center` and have it align with the pixel grid regardless of the number of characters in the text.
 - Put more pixel art everywhere!
 - Add explanations of the techiques I used to THIS website!
+- Add a link to github
