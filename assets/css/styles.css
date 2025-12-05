@@ -35,29 +35,19 @@ main {
 }
 
 button {
-    width: 200px;
-    height: 48px;
+    --button-width: 200px;
+    --button-height: 48px;
+
+    width: var(--button-width);
+    height: var(--button-height);
     image-rendering: pixelated;
     background-color: #00000000;
 
     border: 8px solid;
     border-image-source: url(../images/button_border.png);
     border-image-slice: 4 fill;
-}
 
-button:hover {
-    border-image-source: url(../images/button_border_hovered.png);
-}
-/* Element exists purely to pre-fetch the hovered background image to avoid flickering when first hovering over the button */
-button:before{
-    content: '';
-    width: 0;
-    height: 0;
-    background-image: url(../images/button_border_hovered.png);
-}
 
-/* This is at the bottom because the multiline string breaks vscode's syntax highlighting for all following lines */
-button {
     clip-path: shape(
         from 4px 0px,
         line by 192px 0px,
@@ -70,4 +60,15 @@ button {
         line by 2px 0px, line by 0px -2px, line by 2px 0px, line by 0px -2px,
         close
     );
+}
+
+button:hover {
+    border-image-source: url(../images/button_border_hovered.png);
+}
+/* Element exists purely to pre-fetch the hovered background image to avoid flickering when first hovering over the button */
+button:before{
+    content: '';
+    width: 0;
+    height: 0;
+    background-image: url(../images/button_border_hovered.png);
 }
