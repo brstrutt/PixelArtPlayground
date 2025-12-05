@@ -35,8 +35,8 @@ main {
 }
 
 button {
-    --button-width: 160px;
-    --button-height: 28px;
+    --button-width: 142px;
+    --button-height: 22px;
 
     width: var(--button-width);
     height: var(--button-height);
@@ -74,5 +74,16 @@ button {
         width: 0;
         height: 0;
         background-image: url(../images/button_border_hovered.png);
+    }
+
+    p {
+        position: relative;
+        top: -9px;
+        left: -8px;
+        padding-left: 6px;
+        text-align: left;
+
+        width: var(--button-width);
+        height: var(--button-height);
     }
 }
