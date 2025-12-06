@@ -10,7 +10,7 @@ html {
 main {
     background-color: #a9a9a9;
     --viewWidthRemainderFour: mod(100vw, 4px);
-    width: calc(var((100vw - var(--viewWidthRemainderFour))) / 2px);
+    width: calc((100vw - var(--viewWidthRemainderFour)) / 2px);
     --viewWidthRemainderEight: mod(100vw, 8px);
     margin: 20px calc((100vw - var(--viewWidthRemainderEight)) / 4);
     padding: 18px;
@@ -85,5 +85,15 @@ button {
 
         width: var(--button-width);
         height: var(--button-height);
+    }
+}
+
+header {
+    position: absolute;
+
+    button {
+        position: relative;
+        top: 0px;
+        vertical-align: top;
     }
 }
