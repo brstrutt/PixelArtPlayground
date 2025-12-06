@@ -10,6 +10,17 @@
 </head>
 
 <body>
+    <header>
+            <button type='button' id='toggle_pixel_grid'>
+                <p>Toggle pixel grid</p>
+            </button>
+            <button type='button' id='toggle_pixel_grid' style='--button-width: 66px'>
+                <p>button</p>
+            </button>
+            <button type='button' id='toggle_pixel_grid' style='--button-width: 34px; --button-height: 34px'>
+                <div class='bellsprout'></div>
+            </button>
+    </header>
     <main>
         <div style='overflow: auto;'>
             <div style='float: left; shape-outside: inset(0);'>
@@ -524,11 +535,6 @@
             <div class='bellsprout' style='float: left;'></div>
             <div class='spoink' style='float: left;'></div>
         </div>
-        <footer>
-            <button type='button' id='toggle_pixel_grid'>
-                <p>Toggle pixel grid</p>
-            </button>
-        </footer>
     </main>
     <div class='pixel_grid' hidden></div>
 </body>

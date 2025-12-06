@@ -76,7 +76,7 @@ button {
         background-image: url(../images/button_border_hovered.png);
     }
 
-    p {
+    * {
         position: relative;
         top: -9px;
         left: -8px;
