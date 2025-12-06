@@ -94,6 +94,12 @@ header {
     button {
         position: relative;
         top: 0px;
-        vertical-align: top;
+        vertical-align: bottom;
+        --button-height: 58px;
+        transform:translateY(-60px);
+
+        &:hover {
+            transform:translateY(-24px);
+        }
     }
 }
