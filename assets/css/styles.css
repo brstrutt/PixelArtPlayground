@@ -70,6 +70,12 @@ button {
         }
     }
 
+    @media (hover: none) or (pointer: coarse) {
+        &:active {
+            border-image-source: url(../images/button_border_hovered.png);
+        }
+    }
+
     /* Element exists purely to pre-fetch the hovered background image to avoid flickering when first hovering over the button */
     &:before{
         content: '';
