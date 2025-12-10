@@ -64,8 +64,10 @@ button {
         close
     );
 
-    &:hover {
-        border-image-source: url(../images/button_border_hovered.png);
+    @media not (hover: none) and (pointer: coarse) {
+        &:hover {
+            border-image-source: url(../images/button_border_hovered.png);
+        }
     }
 
     /* Element exists purely to pre-fetch the hovered background image to avoid flickering when first hovering over the button */
@@ -105,7 +107,14 @@ header {
             bottom: -6px;
         }
 
-        &:hover {
+
+        @media not (hover: none) and (pointer: coarse) {
+            &:hover {
+                transform: translateY(36px);
+            }
+        }
+
+        @media (hover: none) or (pointer: coarse) {
             transform: translateY(36px);
         }
     }
