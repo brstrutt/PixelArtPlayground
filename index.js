@@ -15,7 +15,7 @@ function togglePixelGridVisible() {
 }
 
 function toggleBellsproutVisible() {
-    const bellsprouts = document.getElementsByClassName("bellsprout");
+    const bellsprouts = document.querySelectorAll("main .bellsprout");
     if(bellsprouts) {
         for(const sprout of bellsprouts) {
             sprout.hidden = !sprout.hidden;
@@ -24,7 +24,7 @@ function toggleBellsproutVisible() {
 }
 
 function toggleSpoinkVisible() {
-    const spoinks = document.getElementsByClassName("spoink");
+    const spoinks = document.querySelectorAll("main .spoink");
     if(spoinks) {
         for(const spoink of spoinks) {
             spoink.hidden = !spoink.hidden;
