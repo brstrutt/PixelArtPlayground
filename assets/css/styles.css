@@ -64,7 +64,7 @@ button {
         close
     );
 
-    @media not (hover: none) and (pointer: coarse) {
+    @media (hover: hover) and (pointer: fine) {
         &:hover {
             border-image-source: url(../images/button_border_hovered.png);
         }
@@ -114,7 +114,7 @@ header {
         }
 
 
-        @media not (hover: none) and (pointer: coarse) {
+        @media (hover: hover) and (pointer: fine) {
             &:hover {
                 transform: translateY(36px);
             }
