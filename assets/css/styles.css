@@ -93,13 +93,14 @@ header {
 
     button {
         position: relative;
-        top: 0px;
+        top: -60px;
         vertical-align: bottom;
         --button-height: 58px;
-        transform:translateY(-60px);
+        transition-property: transform;
+        transition-duration: 0.5s;
 
         &:hover {
-            transform:translateY(-24px);
+            transform: translateY(36px);
         }
     }
 }
