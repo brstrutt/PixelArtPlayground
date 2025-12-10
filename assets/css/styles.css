@@ -84,7 +84,6 @@ button {
         text-align: left;
 
         width: var(--button-width);
-        height: var(--button-height);
     }
 }
 
@@ -99,6 +98,12 @@ header {
         transition-property: transform;
         transition-duration: 0.3s;
         transition-timing-function: steps(18);
+
+        * {
+            position: absolute;
+            top: unset;
+            bottom: -6px;
+        }
 
         &:hover {
             transform: translateY(36px);
