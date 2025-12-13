@@ -42,6 +42,7 @@ button {
     height: var(--button-height);
     image-rendering: pixelated;
     background-color: #00000000;
+    text-align: left;
 
     border: 8px solid;
     border-image-source: url(../images/button_border.png);
@@ -84,12 +85,12 @@ button {
         background-image: url(../images/button_border_hovered.png);
     }
 
-    * {
+    div, p {
         position: relative;
         top: -9px;
         left: -8px;
+
         padding-left: 6px;
-        text-align: left;
 
         width: var(--button-width);
     }
