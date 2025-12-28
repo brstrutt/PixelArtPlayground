@@ -1,0 +1,61 @@
+button, label.toggle_button {
+    --button-width: 142px;
+    --button-height: 22px;
+
+    width: var(--button-width);
+    height: var(--button-height);
+    image-rendering: pixelated;
+    background-color: #00000000;
+    text-align: left;
+
+    border: 8px solid;
+    border-image-source: url(../images/button_border.png);
+    border-image-slice: 4 fill;
+
+
+    --adjusted-button-width: calc(var(--button-width) - 8px);
+    --adjusted-button-height: calc(var(--button-height) - 8px);
+
+    clip-path: shape(
+        from 4px 0px,
+        line by var(--adjusted-button-width) 0px,
+        line by 0px 2px, line by 2px 0px, line by 0px 2px, line by 2px 0px,
+        line by 0px var(--adjusted-button-height),
+        line by -2px 0px, line by 0px 2px, line by -2px 0px, line by 0px 2px,
+        line by calc(-1 * var(--adjusted-button-width)) 0px,
+        line by 0px -2px, line by -2px 0px, line by 0px -2px, line by -2px 0px,
+        line by 0px calc(-1 * var(--adjusted-button-height)),
+        line by 2px 0px, line by 0px -2px, line by 2px 0px, line by 0px -2px,
+        close
+    );
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            border-image-source: url(../images/button_border_hovered.png);
+        }
+    }
+
+    @media (hover: none) or (pointer: coarse) {
+        &:active {
+            border-image-source: url(../images/button_border_hovered.png);
+        }
+    }
+
+    /* Element exists purely to pre-fetch the hovered background image to avoid flickering when first hovering over the button */
+    &:before{
+        content: '';
+        width: 0;
+        height: 0;
+        background-image: url(../images/button_border_hovered.png);
+    }
+
+    div, p {
+        position: relative;
+        top: -9px;
+        left: -8px;
+
+        padding-left: 6px;
+
+        width: var(--button-width);
+    }
+}

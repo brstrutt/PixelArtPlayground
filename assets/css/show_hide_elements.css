@@ -1,0 +1,20 @@
+.pixel_grid {
+    display: none;
+}
+html:has(#toggle_pixel_grid:checked) .pixel_grid {
+    display: block;
+}
+
+main .bellsprout {
+    display: none;
+}
+html:has(#toggle_bellsprout:checked) main .bellsprout {
+    display: block;
+}
+
+main .spoink {
+    display: none;
+}
+html:has(#toggle_spoink:checked) main .spoink {
+    display: block;
+}
