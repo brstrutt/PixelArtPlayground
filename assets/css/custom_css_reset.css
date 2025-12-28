@@ -9,6 +9,7 @@
 
 /* 8. Avoid text overflows */
 p,
+label,
 h1,
 h2,
 h3,
@@ -19,7 +20,8 @@ h6 {
 }
 
 /* 9. Improve line wrapping */
-p {
+p,
+label {
 	text-wrap: pretty;
 }
 
