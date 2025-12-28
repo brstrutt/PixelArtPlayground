@@ -11,9 +11,10 @@
 
 <body>
     <header>
-            <button type='button' id='toggle_pixel_grid' style='--button-width: 64px'>
+            <input type='checkbox' id='toggle_pixel_grid' class='toggle_button'/>
+            <label for="toggle_pixel_grid" class="toggle_button" style='--button-width: 64px'>
                 <p>Toggle pixel grid</p>
-            </button>
+            </label>
             <button type='button' id='toggle_bellsprout' style='--button-width: 34px'>
                 <div class='bellsprout' style='bottom: -11px'></div>
             </button>
@@ -541,7 +542,7 @@
             <img src="assets/images/octocat16.png" alt="Github logo" width="32" height="32" style="position: relative; top: -5px; left: -4px;"/>
         </a>
     </button>
-    <div class='pixel_grid' hidden></div>
+    <div class='pixel_grid'></div>
 </body>
 
 </html>

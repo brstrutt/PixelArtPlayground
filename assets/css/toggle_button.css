@@ -1,0 +1,7 @@
+input.toggle_button {
+    display: none;
+}
+
+label.toggle_button {
+    display: inline-block;
+}

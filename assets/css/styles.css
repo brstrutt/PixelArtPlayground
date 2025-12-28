@@ -2,6 +2,7 @@
 @import url(./custom_css_reset.css);
 @import url(./pixel_fonts.css);
 @import url(./pixel_art/styles.css);
+@import url(./toggle_button.css);
 
 html {
     position: relative;
@@ -34,7 +35,7 @@ main {
     pointer-events: none;
 }
 
-button {
+button, label.toggle_button {
     --button-width: 142px;
     --button-height: 22px;
 
@@ -99,7 +100,7 @@ button {
 header {
     position: absolute;
 
-    button {
+    button, label.toggle_button {
         position: relative;
         top: -60px;
         vertical-align: bottom;
@@ -125,4 +126,12 @@ header {
             transform: translateY(36px);
         }
     }
+}
+
+.pixel_grid {
+    display: none;
+}
+
+html:has(#toggle_pixel_grid:checked) .pixel_grid {
+    display: block;
 }
