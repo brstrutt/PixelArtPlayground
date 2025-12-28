@@ -1,7 +1,9 @@
 input.toggle_button {
     display: none;
+    user-select: none;
 }
 
 label.toggle_button {
     display: inline-block;
+    user-select: none;
 }
