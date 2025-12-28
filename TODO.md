@@ -1,4 +1,3 @@
-- Can I make the toggle buttons work without javascript?
 - Can I ANIMATE the non standard div shape?
 - Can I find a pixel art font that is monospace AND has exact pixel height including whitespace AND each character is an even number of pixels wide when counting the gap between them? I need this if I ever want to center text using `text-align: center` and have it align with the pixel grid regardless of the number of characters in the text.
 - Put more pixel art everywhere!
@@ -9,3 +8,4 @@
 - ~~Can I get pixelated div motion working? Standard animation will probably look too smooth and will drag pixels into subpixels, losing crispness~~
 - ~~Can I get pixel art images to display properly when at a pixel scale of 1x1? Normally the trick is to scale it up to 44 or 8x8 per pixel, but that's ass.~~
 - ~~Add a link to github~~
+- ~~Can I make the toggle buttons work without javascript?~~
