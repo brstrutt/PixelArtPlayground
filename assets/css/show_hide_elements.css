@@ -5,6 +5,13 @@ html:has(#toggle_pixel_grid:checked) .pixel_grid {
     display: block;
 }
 
+.screenspace_pixel_grid {
+    display: none;
+}
+html:has(#toggle_screenspace_pixel_grid:checked) .screenspace_pixel_grid {
+    display: block;
+}
+
 main .bellsprout {
     display: none;
 }
